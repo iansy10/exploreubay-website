@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="icon" type="image/x-icon" href="eu.jpg">
+	<link rel="stylesheet"  href="aboutstyle.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+	<!------header start------>
+
+      <header class="header">
+      	<div id="menu-btn" class="fa-solid fa-bars"></div>
+
+      	<a href="#" data-aos="zoom-in-left" data-aos-delay="150" class="logo"><i class="fa-solid fa-paper-plane"></i><span>E</span>xplore <span>U</span>bay</a>
+
+      	<nav class="navbar">
+      		<a href="file:///F:/homepage.html" data-aos="zoom-in-left" data-aos-delay="300">Home</a>
+      		<a href="#about" class="active" data-aos="zoom-in-left" data-aos-delay="450">About us</a>
+      		<a href="file:///F:/destination.html" data-aos="zoom-in-left" data-aos-delay="600">Destination</a>
+      		<a href="file:///F:/gallery.html" data-aos="zoom-in-left" data-aos-delay="900">Gallery</a>
+      		<a href="file:///F:/contact.html" data-aos="zoom-in-left" data-aos-delay="750">contact</a>
+      	</nav>
+      	
+      </header>
+<!------header end------>
+
+<!------about us section start------>
+     
+    <section class="about">
+    	<div class="video-container" data-aos="fade-right" data-aos-delay="300">
+    		<video src="benliw.mp4" muted autoplay loop class="video"></video>
+    	</div>
+      <div class="home-sci" data-aos="fade-up" data-aos-delay="500">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-gmail'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div>
+    	<div class="content" data-aos="fade-left" data-aos-delay="600">
+    		<span>About us</span>
+    		<h3>A great smiling for you</h3>
+    		<p>a journey of a thousand miles begins with a single step no matter how bad the road and accommodations.</p>
+    		<a href="file:///F:/aboutreadmore.html" class="btn">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    	</div>
+    </section>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+<!------about us section end------>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+	AOS.init({
+		duration: 800,
+		offset: 150,
+	});
+
+	let sections =document.querySelectorAll('section');
+    let navLinks =document.querySelectorAll('header nav a');
+
+  document.querySelectorAll('.about .video-container .controls .control-btn').forEach(btn =>{
+    btn.onclick = () =>{
+      let src = btn.getAttribute('data-src');
+      document.querySelector('.about .video-container .video').src = src;
+    }
+  })
+</script>
+</body>
+</html>

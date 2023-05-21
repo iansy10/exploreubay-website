@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stayl.css">
+	
+</head>
+<body>
+
+    <section class="gallery min-vh-100">
+    	<div class="container-lg">
+    		<div class="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+     <img src="epep.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="lok.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="borikoy.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="cleven.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="daryl.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="aying.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="khian.jpg" class="gallery-item" alt="gallery">
+     </div>
+     <div class="col">
+     <img src="jiyan.jpg" class="gallery-item" alt="gallery">
+     </div>
+ </div>
+</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="epep.jpg" class="modal-img" alt="Modal Img">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script type="text/javascript">
+ 	document.addEventListener("click", function(e){
+	if(e.target.classList.contains("gallery-item")){
+		const src = e.target.getAttribute("src");
+		document.querySelector(".model-img").src = src;
+		const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+		myModal.show();
+	}
+})
+ </script>
+</body>
+</html>

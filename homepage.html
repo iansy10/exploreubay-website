@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="icon" type="image/x-icon" href="eu.jpg">
+	  <link rel="stylesheet"  href="homepagestyle.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+	<!------header start------>
+
+      <header class="header">
+      	<div id="menu-btn" class="fa-solid fa-bars"></div>
+
+      	<a href="#" data-aos="zoom-in-left" data-aos-delay="150" class="logo"><i class="fa-solid fa-paper-plane"></i><span>E</span>xplore <span>U</span>bay</a>
+
+      	<nav class="navbar">
+      		<a href="#homepage" class="active" data-aos="zoom-in-left" data-aos-delay="300">Home</a>
+      		<a href="file:///F:/aboutus.html" data-aos="zoom-in-left" data-aos-delay="450">About us</a>
+      		<a href="file:///F:/destination.html" data-aos="zoom-in-left" data-aos-delay="600">Destination</a>
+          <a href="file:///F:/gallery.html" data-aos="zoom-in-left" data-aos-delay="900">Gallery</a>
+      		<a href="file:///F:/contact.html" data-aos="zoom-in-left" data-aos-delay="750">Contact</a>
+      	</nav>
+      	
+      </header>
+<!------header end------>
+
+<!------home section start------>
+        
+ <section class="home" id="home">
+  <div class="home-text">
+    <div class="slide">
+      <span class="one" data-aos="fade-up" data-aos-delay="150">Hello!</span>
+      <span class="two" data-aos="fade-up" data-aos-delay="300">Welcome to</span>
+    </div>
+    <div class="text-animate">
+    <h1 data-text="UBAY TOURIST SPOT" data-aos="fade-up" data-aos-delay="450">UBAY TOURIST SPOT</h1>
+    <h3 data-aos="fade-up" data-aos-delay="550">you explore the <span class="multiple-text"></span></h3>
+    </div>
+    <p data-aos="fade-up" data-aos-delay="650">leave nothing but footprints, take nothing but pictures, kill nothing but time, the biggest adventure you can take is to live the life of your dreams.</p>
+    <div class="btn-box">
+    <a href="file:///F:/destination.html" class="btn" data-aos="fade-up" data-aos-delay="750">Let's go now</a>
+  </div>
+  <div class="home-sci" data-aos="fade-up" data-aos-delay="850">
+    <a href="#"><i class='bx bxl-gmail'></i></a>
+    <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+  </div>
+ </div>
+</section>
+
+<!------home section end------>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+	AOS.init({
+		duration: 800,
+		offset: 150,
+	});
+
+  let sections =document.querySelectorAll('section');
+  let navLinks =document.querySelectorAll('header nav a');
+
+  var typed = new Typed(".multiple-text", {
+      strings: ["Capayas Dam", "Benliw Dam", "PCA Farm"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+  })
+
+  let navbar = document.querySelector('.header .navbar');
+
+  document.querySelector('#menu-btn').onclick = () => {
+    navbar.classList.toggle('active');
+  }
+
+  window.onscroll = () => {
+    navbar.classList.remove('active');
+  }
+</script>
+</body>
+</html>

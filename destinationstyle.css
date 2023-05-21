@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body {
+	background: linear-gradient(35deg, rgba(0,183,229,100%) 0%, rgba(50,136,111,100%) 100%);
+	overflow-x: hidden;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+section {
+	padding: 3rem 9%;
+}
+
+.heading {
+	text-align: center;
+	margin-top: 7rem;
+}
+
+.heading span {
+	color: #000;
+	font-size: 2.5rem;
+	font-weight: 550;
+
+}
+
+.heading h1 {
+	font-size: 3rem;
+	color: #fff;
+}
+
+/*-----header-----*/
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1100;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 1.5rem 9%;
+	box-shadow: 0 1px 6px 0 rgba(32 32 36 / 28%);
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+	border-bottom-right-radius: 10px ;
+	backdrop-filter: blur(25px);
+	border-bottom-left-radius: 10px ;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	transition: .1s;
+}
+
+.header .navbar a {
+	font-size: 1.7rem;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	font-weight: 500;
+	text-decoration: none;
+	margin: 0 1rem;
+}
+
+.header .navbar a::before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background: #000;
+	transition: .5s;
+}
+
+.header .navbar a:hover::before {
+	width: 100%;
+}
+
+.header nav a:hover,
+.header nav a.active {
+	border-bottom: 3px solid #000;
+}
+
+.header nav a:hover,
+.header nav a.active {
+	color: #000;
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.logo i {
+	color: #000;
+	padding-right: .5rem;
+}
+
+.logo span {
+	color: #000;
+}
+
+#menu-btn {
+	font-size: 2.5rem;
+	color: #000;
+	cursor: pointer;
+	display: none;
+}
+
+:root{
+	--bg-color: #1f242d;
+	--second-bg-color: #323946;
+	--text-color: #fff;
+	--second-color: #ccc;
+	--main-color: #05b4ff;
+	--second-main-color: #0ef;
+	--big-font: 5rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+
+.destination .container {
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px 50px;
+}
+
+.destination .container .card {
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+	backdrop-filter: blur(25px);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 2rem 0 2rem 0;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0,0.5);
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s ease-in-out;
+}
+
+.destination .container .card:hover {
+	height: 420px;
+}
+
+.destination .container .card .imgBx {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 3.4px;
+	z-index: 1;
+}
+
+.destination .container .card .imgBx img {
+	max-width: 100%;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+	border-radius: 0 2rem 0 2rem;
+}
+
+.destination .container .card .content {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.destination .container .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition: 0.3s;
+}
+
+.destination .container .card .content .stars {
+	padding-bottom: 1rem;
+}
+
+.destination .container .card .content .stars i {
+	font-size: 1.8rem;
+	color: goldenrod;
+}
+
+.destination .container .card .content h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #000;
+}
+
+.destination .container .card .content p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.destination .container .card .content a {
+	position: relative;
+	top: 25px;
+	display: inline-block;
+	padding: 12px 25px;
+	background: #fff;
+	font-weight: 550;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0,0.5);
+	text-decoration: none;
+	border-radius: 0 1rem 0 1rem;
+	font-size: 1.7rem;
+	color: #000;
+	text-align: center;
+}
+
+.destination .container .card .content a:hover {
+	background: #000;
+	color: #fff;
+}
+
+.destination .container .card .content a:hover i {
+	padding-left: 1rem;
+}
+
+.destination .container .card .content a i {
+	padding-right: .5rem;
+}
+
+.heart-btn{
+  position: absolute;
+  top: 2.7rem; left: 23.3rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  transform: translate(-50%,-50%);
+}
+
+.heart-btn:hover {
+	background: #fbd0d8;
+}
+
+.contents{
+  cursor: pointer;
+}
+
+.heart{
+  position: absolute;
+  background: url("img.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+.hearts-btn{
+  position: absolute;
+  top: 2.7rem; left: 23.3rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.hearts-btn:hover {
+	background: #fbd0d8;
+}
+
+.contentst{
+  cursor: pointer;
+}
+
+.hearts{
+  position: absolute;
+  background: url("img.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hearts.hearts-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+.heartss-btn{
+  position: absolute;
+  top: 2.7rem; left: 23.3rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.heartss-btn:hover {
+	background: #fbd0d8;
+}
+
+.contentss{
+  cursor: pointer;
+}
+
+.heartss{
+  position: absolute;
+  background: url("img.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.heartss.heartss-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+
